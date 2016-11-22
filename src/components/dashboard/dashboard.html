@@ -1,0 +1,50 @@
+<div class="container" >
+    <div  ng-repeat="album in $ctrl.service.results.albums.items">
+        <div class="col-md-12 albumrow">
+            <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0 
+                col-md-2 col-md-offset-0  colsectionleft">
+                <img src="{{album.images[0].url}}" alt="" class="port">
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-10 colsectionright">
+                    <img src="{{album.images[0].url}}" alt="" class="blur">
+                <div class="onblur container">
+
+                    <div class="col-sm-6 col-md-12">
+                        <div class="row ">
+                            <div class="col-sm-6 col-md-12">
+                                <h4>{{album.artists[0].name}}</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <p class="Cd-name">{{album.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-12">
+                        <div class="row last">
+                            <div class="col-xs-12 col-sm-12 col-md-9">
+                                <a href="{{album.external_urls.spotify}}" target="_blank">
+                                <div class="round">
+                                    <span class="glyphicon glyphicon-volume-up roundgli"></span>
+                                </div>
+                                <span class="listen">Listen on Spotify</span></a>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-3">
+                                <a href="./#/album/{{album.id}}" >
+                                    <button class="commentb">VIEW COMMENTS</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+</div>
+
+
+
+

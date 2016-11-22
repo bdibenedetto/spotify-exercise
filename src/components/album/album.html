@@ -1,0 +1,23 @@
+<div class="container">
+    <album-detail></album-detail>
+    <div class="col-md-12 controls">
+            <div class="col-md-8">
+                <p>COMMENTS</p> 
+            </div>
+            <div class="col-md-4">
+                <div ng-show="$ctrl.creating" class="pullright">
+                    <div class="round" ng-click="$ctrl.toggleForm()">
+                        <span class="glyphicon glyphicon-remove roundgli"></span>
+                    </div>
+                </div>
+                <div ng-show="!$ctrl.creating"  class="pullright">
+                    <span class="commentadd">Add comment</span>
+                    <div class="round" ng-click="$ctrl.toggleForm()">
+                        <span class="glyphicon glyphicon-plus roundgli"></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div comment-create ng-show="$ctrl.creating"></div>
+    <div comment-list ></div>
+</div>

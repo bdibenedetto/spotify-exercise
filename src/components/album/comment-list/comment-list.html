@@ -1,0 +1,15 @@
+
+<div class="col-md-12 comment" ng-repeat="comment in $ctrl.comments" >
+        <div class="col-xs-2 col-sm-1 col-md-1 avatar">
+            <img src="{{comment.avatar}}" alt="" class="">
+        </div>
+        <div class="col-xs-10 col-sm-11 col-md-11 commentbody">
+            <div class="col-md-12 email">
+                <p>{{comment.email}}</p>
+            </div>
+            <div class="col-md-12 commentitself">
+                <p>{{comment.text}}</p>
+            </div>
+        </div>
+
+</div>

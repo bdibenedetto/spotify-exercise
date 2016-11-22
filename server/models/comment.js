@@ -1,8 +1,8 @@
-let mongoose = require('mongoose');
-let Schema = mongoose.Schema;
-let md5 = require('md5');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const md5 = require('md5');
 
-let comment = new Schema({
+const comment = new Schema({
   email: {
     type: String,
     trim: true,

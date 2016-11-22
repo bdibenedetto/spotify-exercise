@@ -1,0 +1,38 @@
+.comment {
+    padding: 0px;
+    background-color: #282828;
+    margin-top: 5px;
+    height: 86px;
+    @media all and (max-width: 992px) {
+                height: 110px;
+        }
+    @media all and (max-width: 768px) {
+            height: 170px;
+    }
+    .commentbody{
+            padding-left: 0px; 
+            margin-top: 10px;
+        .commentitself {
+            padding-left: 0px;
+            color: white;
+        }
+        .email {
+            padding-left: 0px;
+            color: #a0a097
+        }
+        @media all and (max-width: 992px) {
+                padding-left: 20px;
+        }
+    }
+    .avatar {
+        padding-right: 0px;
+        img{
+            margin-top:10px; 
+            border-radius: 50%;
+            width:50px;
+            height: 50px;
+            background-color: #404040;
+        }
+
+    }
+}

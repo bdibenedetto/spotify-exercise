@@ -34,6 +34,14 @@ router.get('/:albumId', (req, res) => {
   );
 });
 
+router.get('/', (req, res) => {
+  Comment.find()
+  .then(
+    (docs) => res.status(200).json(docs),
+    (err) => res.status(400).send(err)
+  );
+});
+
 /**
 * @api {POST} /comments Push a Comment to an album
 * @apiName CreateComment
@@ -81,7 +89,7 @@ router.get('/:albumId', (req, res) => {
 *  }
 */
 router.post('/', (req, res) => {
-  let comment = new Comment(req.body);
+  const comment = new Comment(req.body);
 
   comment.save()
   .then(

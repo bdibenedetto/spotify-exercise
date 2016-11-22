@@ -1,12 +1,16 @@
 // Import from npm
 @import 'normalize.css';
+@import './common/navbar/navbar';
+@import './components/dashboard/dashboard';
 
-$background-color: #fff;
+
+$background-color: #000;
 
 body {
   background: $background-color;
 
   section {
+    margin-top: 10vh;
     height: 100vh;
     position: relative;
     width: 100vw;

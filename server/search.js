@@ -27,4 +27,12 @@ router.get('/', (req, res) => {
   }
 });
 
+
+router.get('/:id', (req, res) => { 
+    axios.get("https://api.spotify.com/v1/albums/"+req.params.id)
+    .then(resp => res.status(resp.status).send(resp.data))
+    .catch(err => res.status(err.response.status).send(err.response.data));
+  
+});
+
 module.exports = router;
